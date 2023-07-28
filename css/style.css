@@ -1,6 +1,8 @@
+/*# sourceMappingURL=style.css.map */
 @charset "UTF-8";
+
 body {
-  background-color: #f5f5f5;
+  background-color: #ab2222;
   font-family: Helvetica;
 }
 
@@ -19,7 +21,7 @@ body {
 /* FORMULARIO */
 
 .Principal_title{
-  font-weight: bold;
+font-weight: bold;
 }
 
 
@@ -45,22 +47,24 @@ body {
 }
 
 .File_principal {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 20px;
 }
 
 .container_file{
   display: flex;
 }
 
-
-
 .form-check-label{
   font-size: 15px;
 }
 
+#Button_Forem{
+  background-color: rgb(7, 38, 39);
+}
 
-
+.Button.Guthub{
+  background-color: #282828;
+}
 
 
 

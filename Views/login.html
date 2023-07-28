@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="Hola bg-light">
   <!-- NAV -->
   <header class="sticky-top">
     <nav class="navbar p-0 px-3 bg-white nav__container">
@@ -57,7 +57,7 @@
         <!--    crear login y account  -->
         <div class="d-flex gap-3">
         
-            <button class="btn btn-outline-primary d-none d-md-block ml-1 border border-white ">
+            <button id="Login_Button" class="btn btn-outline-primary d-none d-md-block ml-1 border border-white ">
                 Login
               </button>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
@@ -69,7 +69,7 @@
               </svg>
 
 
-          <button class="btn btn-outline-primary d-none d-md-block">
+          <button id="CreateAC_button"   class="btn btn-outline-primary d-none d-md-block">
             Create Account
           </button>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
@@ -713,25 +713,27 @@
     </nav>
   </header>
   <!-- MAIN -->
-  <div class="container d-flex justify-content-center align-items-center col-12">
-    <div class=" File_principal w-50 p-5 bg-white rounded">
+  <div class="container_FilePrincipal d-flex justify-content-center align-items-center col-12 ">
+    <div class=" File_principal w-50 p-5 bg-white rounded mt-5 mb-5 " >
 
       <div class="FistTitleInFile">
         <h2 class="Principal_title text-center">Welcome to DEV Community</h2>
-        <p class="text-center">DEV Community is a community of 1,107,295 amazing developers</p>
+        <p class="text-center">DEV Community is a community of 1,108,653 amazing developers</p>
       </div>
 
-        <div class="Buttons_WhitoutDirection ">
-        <button class="col-12 my-1 p-2 border-0 rounded fw-bold">
+        <div class="Buttons_WhitoutDirection text-white">
+        <button class="col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-dark">
+          <img class="Photo_Apple" src="/sources/images/APPLE.BACKGROUND WHITE.png" alt="" width="15px" height="15px" >
           Continue with Apple
         </button>
-        <button class="col-12 my-1 p-2 border-0 rounded">
+        <button class="Button_Forem col-12 my-1 p-2 border-0 rounded fw-bold text-white ">
           Continue with Forem
         </button>
-        <button class="col-12 my-1 p-2 border-0 rounded">
+        <button class="Button_Github col-12 my-1 p-2 border-0 rounded fw-bold text-white">
           Continue with Github
         </button>
-        <button class="col-12 my-1 p-2 border-0 rounded">
+        <button class="col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-info">
+          <img src="/sources/images/circle TW bird.png" alt="" width="30px" height="30px" >
           Continue with Twitter
         </button>
          </div>
@@ -863,6 +865,10 @@
       Community © 2016 - 2023.
     </p>
   </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="/js/nav.js" type="model"></script>
 </body>
 
 </html>
