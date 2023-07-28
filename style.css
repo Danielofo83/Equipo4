@@ -246,6 +246,7 @@ body {
   height: 24px;
 }
 
+
 .reply__box {
   background-color: rgb(245, 245, 245);
   margin-left: 5px;
@@ -279,6 +280,9 @@ body {
 
 .card {
   margin-bottom: 10px;
+}
+.card:not(:first-of-type) img.card-img-post {
+ display: none;
 }
 
 /* ASIDE 2 */
