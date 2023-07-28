@@ -4,6 +4,7 @@ body {
   font-family: Helvetica;
 }
 
+
 /* NAV */
 .nav__container {
   height: 56px;
@@ -14,6 +15,54 @@ body {
 .nav__container .nav__form__container .search__button .search__hover:hover {
   background-color: rgba(40, 116, 166, 0.1) !important;
 }
+
+/* FORMULARIO */
+
+.Principal_title{
+  font-weight: bold;
+}
+
+
+.hr-sect {
+ display: flex;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hr-sect::before,.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+
+.File_principal {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container_file{
+  display: flex;
+}
+
+
+
+.form-check-label{
+  font-size: 15px;
+}
+
+
+
+
+
 
 /* ASIDE1 */
 .icon__null{

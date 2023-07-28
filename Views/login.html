@@ -9,7 +9,7 @@
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./sources/images/mojarra3.webp" />
 
@@ -54,10 +54,10 @@
             </form>
           </div>
         </div>
-        <div class="d-flex">
+        <!--    crear login y account  -->
+        <div class="d-flex gap-3">
         
-         <!--    crear login y acount  -->
-            <button class="btn btn-outline-primary d-none d-md-block ml-1">
+            <button class="btn btn-outline-primary d-none d-md-block ml-1 border border-white ">
                 Login
               </button>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
@@ -80,6 +80,7 @@
             </path>
           </svg>
 
+
           <a href="#" class="navbar-nav mx-3 my-auto">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
               aria-labelledby="a4gcjtvbhvh6eh4ee8qmpi1l37goznso" class="crayons-icon">
@@ -89,16 +90,21 @@
               <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"></path>
             </svg>
           </a>
+
+
           <a href="https://www.instagram.com/emiliodeleonhdz/">
-            <img src="https://ca.slack-edge.com/TCRFJBKB6-U0275TN36E8-db6aee7f44f9-192" alt=""
+            <img src="https://trellat.es/wp-content/uploads/2015/02/javascript_logo.png" alt=""
               class="navbar-nav rounded-circle me-1" height="40" />
           </a>
         </div>
+
+
+
         <!-- OFFCANVAS -->
         <div class="offcanvas offcanvas-start w-sm-50" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h6 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+            <h6 class=" offcanvas-title fw-bold" id="offcanvasNavbarLabel">
               DEV Community
             </h6>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -708,11 +714,15 @@
   </header>
   <!-- MAIN -->
   <div class="container d-flex justify-content-center align-items-center col-12">
-    <div class=" w-50 p-5">
-      <div class="buttons">
-        <h2 class="text-center">Welcome to DEV Community</h2>
+    <div class=" File_principal w-50 p-5 bg-white rounded">
+
+      <div class="FistTitleInFile">
+        <h2 class="Principal_title text-center">Welcome to DEV Community</h2>
         <p class="text-center">DEV Community is a community of 1,107,295 amazing developers</p>
-        <button class="col-12 my-1 p-2 border-0 rounded">
+      </div>
+
+        <div class="Buttons_WhitoutDirection ">
+        <button class="col-12 my-1 p-2 border-0 rounded fw-bold">
           Continue with Apple
         </button>
         <button class="col-12 my-1 p-2 border-0 rounded">
@@ -724,28 +734,30 @@
         <button class="col-12 my-1 p-2 border-0 rounded">
           Continue with Twitter
         </button>
-      </div>
-      <div class="d-flex">
-        <div class="w-auto">1</div>
-        <span>Have a password? Continue with your email address</span>
-        <div class="w-auto">2</div>
-      </div>
-      <form class="">
-        <div class="form-group my-4 fw-bold">
+         </div>
+    
+
+<!-- HACER LINEA Y TEXTO -->
+
+<div class="Question_Password">
+<div class="hr-sect">Have a password ? Continue with your email address</div>
+</div>    
+    
+      <form class="FormOfWeb">
+        <div class="form-group my-3 fw-bold ">
           <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="email" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group my-4 fw-bold">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label  for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control my-2" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="form-check my-4">
+        <div class="form-check ">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Remember me</label>
         </div>
-        <button type="submit" class="btn btn-primary my-3 col-12">continue</button>
+        <button type="submit" class="btn btn-primary my-3 col-12 fw-bold">Continue</button>
         <div class="col-12 d-flex justify-content-center">
           <a href="#" class="col-12 text-decoration-none text-center fs-6">I forgot my password</a>
         </div>
@@ -758,7 +770,7 @@
   <footer class="d-flex flex-column align-items-center justify-content-center py-4 text-center footer__container bg-body-secondary"
     style="font-size: 0.8rem">
     <p>
-      <a href="" class="text-decoration-none footer__a">DEV Community</a> — A
+      <a href="" class="text-decoration-none footer__a ">DEV Community</a> — A
       constructive and inclusive social network for software developers. With
       you every step of your journey.
     </p>
