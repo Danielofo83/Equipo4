@@ -9,7 +9,7 @@
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./sources/images/mojarra3.webp" />
 
@@ -27,7 +27,7 @@
           </button>
 
           <a class="navbar-brand" href="#">
-           <img id="NavInteraction" class="Nav_event" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+           <img id="NavInteractionIma" class="Nav_event" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
               alt="" height="40" />
           </a>
 
@@ -45,7 +45,7 @@
                         Search
                       </title>
                       <path
-                        d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+                       class="Path1"    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
                       </path>
                     </svg>
                   </span>
@@ -57,25 +57,29 @@
         <!--    crear login y account  -->
         <div class="d-flex gap-3">
         
-            <button id="EnterFormButton"  class="Login_enter btn btn-outline-primary d-none d-md-block ml-1 border border-white ">
+            <button id="EnterFormButtonLogin"  class="Login_enter btn btn-outline-primary d-none d-md-block ml-1 border border-white ">
                 Login
               </button>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
                 aria-labelledby="agtkixkainaiofuhj4o3hunp3uvwl1y6" class="crayons-icon d-md-none my-auto">
-                <title id="agtkixkainaiofuhj4o3hunp3uvwl1y6">Search</title>
+                <title class="Ttile_search1" id="agtkixkainaiofuhj4o3hunp3uvwl1y6">Search</title>
                 <path
-                  d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+                  d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 
+                  11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z" class="Path2">
                 </path>
               </svg>
 
-          <button id="ButtonCreateAcount"   class="btn btn-outline-primary d-none d-md-block">
+          <button id="ButtonCreateAcount"   class="Create_account btn btn-outline-primary d-none d-md-block">
             Create Account
           </button>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
             aria-labelledby="agtkixkainaiofuhj4o3hunp3uvwl1y6" class="crayons-icon d-md-none my-auto">
-            <title id="agtkixkainaiofuhj4o3hunp3uvwl1y6">Search</title>
+            <title id="agtkixkainaiofuhj4o3hunp3uvwl1y6" class="Title_search2">Search</title>
             <path
-              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 
+              20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 
+              5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 
+              0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z" class="Path3">
             </path>
           </svg>
 
@@ -726,7 +730,7 @@
           Continue with Apple
         </button>
         <button class="Button_Forem col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-danger ">
-          <img class="Photo_Forem" src="/sources/images/forem-logo.png" alt="" width="20px" height="20px" >
+          <img class="Photo_Forem" src="/sources/images/forem-logo.png" alt="" width="25px" height="25px" >
           Continue with Forem
         </button>
         <button class="Button_Github col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-success">
@@ -869,7 +873,7 @@
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script src="/js/nav.js" type="model"></script>
+  <script src="/js/nav.js" type="module"></script>
 </body>
 
 </html>
