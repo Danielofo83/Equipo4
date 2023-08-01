@@ -18,6 +18,28 @@ body {
   background-color: rgba(40, 116, 166, 0.1) !important;
 }
 
+.SeccionLogin {
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.isLogged_login_create {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.isLogged_Campana_imag {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
 /* FORMULARIO */
 
 .Principal_title{
