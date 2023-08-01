@@ -19,8 +19,11 @@
   <!-- NAV -->
   <header class="sticky-top">
     <nav class="navbar p-0 px-3 bg-white nav__container">
+      
       <div class="container-xl p-0 justify-content-between flex-nowrap">
-        <div class="d-flex">
+
+      <div class="NavHorizontal">
+       <div class="d-flex">
           <button class="navbar-toggler mx-md-1 me-2 border-0 d-md-none px-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -54,9 +57,10 @@
             </form>
           </div>
         </div>
+      </div>
         <!--    crear login y account  -->
         <div class="d-flex gap-3">
-        
+        <div class="isLogged_login_create">
             <button id="EnterFormButtonLogin"  class="Login_enter btn btn-outline-primary d-none d-md-block ml-1 border border-white ">
                 Login
               </button>
@@ -82,8 +86,9 @@
               0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z" class="Path3">
             </path>
           </svg>
+        </div>
 
-
+         <div class="isLogged_Campana_imag">
           <a href="#" class="navbar-nav mx-3 my-auto">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
               aria-labelledby="a4gcjtvbhvh6eh4ee8qmpi1l37goznso" class="crayons-icon">
@@ -95,10 +100,12 @@
           </a>
 
 
-          <a href="https://www.instagram.com/emiliodeleonhdz/">
+          <a href="https://bbkbootcamps.thebridge.tech/blog/sobrevivir-a-un-bootcamp">
             <img src="https://trellat.es/wp-content/uploads/2015/02/javascript_logo.png" alt=""
               class="navbar-nav rounded-circle me-1" height="40" />
           </a>
+        </div>
+
         </div>
 
 
@@ -477,12 +484,14 @@
                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" style="enable-background: new 0 0 45 45"
                       xml:space="preserve" version="1.1" id="svg2" width="24" height="24">
                       <metadata id="metadata8">
+
                         <rdf:rdf>
                           <cc:work rdf:about="">
                             <dc:format>image/svg+xml</dc:format>
                             <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
                           </cc:work>
                         </rdf:rdf>
+
                       </metadata>
                       <defs id="defs6">
                         <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
@@ -729,11 +738,11 @@
           <img class="Photo_Apple" src="/sources/images/APPLE.BACKGROUND WHITE.png" alt="" width="15px" height="15px" >
           Continue with Apple
         </button>
-        <button class="Button_Forem col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-danger ">
+        <button class="Button_Forem col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-primary ">
           <img class="Photo_Forem" src="/sources/images/forem-logo.png" alt="" width="25px" height="25px" >
           Continue with Forem
         </button>
-        <button class="Button_Github col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-success">
+        <button class="Button_Github col-12 my-1 p-2 border-0 rounded fw-bold text-white bg-secondary">
           <img class="Photo_Github" src="/sources/images/git.ico" alt="" width="20px" height="20px" >
           Continue with Github
         </button>
@@ -873,7 +882,7 @@
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script src="/js/nav.js" type="module"></script>
+  <script src="../js/" type="module"></script>
 </body>
 
 </html>
