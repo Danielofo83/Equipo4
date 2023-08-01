@@ -830,9 +830,9 @@
       <main class="col-12 col-md-9 col-lg-6  d-flex flex-column p-0">
         <div class="main__title__container">
           <ul class="main__title__items">
-            <li class="main__title__selected">Relevant</li>
-            <li>Latest</li>
-            <li>Top</li>
+            <li id="container-relevant" class="main__title__selected">Relevant</li>
+            <li id="container-last">Latest</li>
+            <li id="container-top">Top</li>
           </ul>
         </div>
 
@@ -845,6 +845,9 @@
       <aside class="col-3 d-none d-lg-block mt-3">
         <div class="card mb-4">
           <div class="card-body">
+            <div id="post-Aleatory">
+
+            </div>
             <h5 class="card-title d-flex justify-content-between">
               Listings
               <a href="#" class="fs-5 text-decoration-none">See all</a>
@@ -1023,6 +1026,7 @@
     crossorigin="anonymous"></script>
 
     <script src="js/post.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </body>
 
 </html>

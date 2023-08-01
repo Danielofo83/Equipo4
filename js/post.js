@@ -2,6 +2,7 @@
 import { getPost } from "./modules/postApi.js";
 import { createPost } from "./modules/createPost.js";
 import { createTag } from "./modules/fiterTag.js";
+import { createPostAside } from "./modules/postAside.js";
 
 let allPost = [];
 
@@ -16,14 +17,17 @@ const getPostAll = async () => {
     allPost = resulPost;
     console.log("array completo")
     console.log(allPost)
-    prinAllPost(allPost);
     
+    prinAllPost(allPost);
+
     prinTag(allPost);
 
     prinTag2(allPost);
+
+    prinAllPostAside(allPost)
+
+
 }
-
-
 
 const prinAllPost = async (postList) => {
     let containerPost = document.getElementById("container-post");
@@ -33,14 +37,38 @@ const prinAllPost = async (postList) => {
 
     });
 }
+    
+
+let relevant= document.getElementById("container-relevant")
+let latestPost= document.getElementById("container-last")
+let topPost=document.getElementById("container-top")
+
+relevant.addEventListener('click', ()=>{
+    document.getElementById("container-post").innerText =" "
+    let relevant= allPost.reverse()
+    prinAllPost(relevant)
+  })
 
 
 
+latestPost.addEventListener('click', ()=>{
+    document.getElementById("container-post").innerText=" "
+    let postDate= allPost.sort((a, b) => moment(a.date, "DD-MM-AA").unix() - moment(b.date, "DD-MM-AA").unix())
+    prinAllPost(postDate)
+  })
+  
+  topPost.addEventListener('click', ()=>{
+    document.getElementById("container-post").innerText=" "
+    let listTop = allPost.sort(( a , b )=>{
+      return b.top - a.top;
+    })
+    prinAllPost(listTop)
+  })
 
 let tagFilter = "#css"
 
 
-const prinTag = async(tagList) => {
+const prinTag = (tagList) => {
 
     let resultfilterTag = tagList.reduce((accum,current)=>{
         return current.tag===tagFilter ? [...accum, current]: [...accum]
@@ -57,7 +85,7 @@ const prinTag = async(tagList) => {
 let tagFilter2 = "#javascript"
 
 
-const prinTag2 = async(tagList) => {
+const prinTag2 = (tagList) => {
 
     let resultfilterTag1 = tagList.reduce((accum,current)=>{
         return current.tag===tagFilter2 ? [...accum, current]: [...accum]
@@ -71,6 +99,12 @@ const prinTag2 = async(tagList) => {
         containerPostTag1.append(cardTagg1)
     });
 }
+const prinAllPostAside =  (objectPost) => {
+    let containerPostAside = document.getElementById("post-Aleatory");
+        let posCardAside = createPostAside(objectPost[3])
+        containerPostAside.append(posCardAside)
+}
 
 
 getPostAll()
+

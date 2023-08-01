@@ -314,3 +314,13 @@ a {
   font-size: 16px;
   font-family: var(--ff-sans-serif);
 }/*# sourceMappingURL=style.css.map */
+
+.p_post_aside{
+  font-size: 10px;
+}
+.card-body-aside{
+  text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}

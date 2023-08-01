@@ -13,7 +13,7 @@ const createTag = (tagObjet) => {
       });
 
     let titleTag = document.createElement("a")
-    titleTag.classList.add("listing__type", "my-2", "text-dark","text-decoration-none" )
+    titleTag.classList.add("listing__type", "my-2", "text-dark","text-decoration-none" ,".hover-overlay" )
     titleTag.innerText= title
 
     let contentComment = document.createElement("div")

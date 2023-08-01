@@ -17,7 +17,7 @@ const printPetDetail = (postData) => {
   document.getElementById("image-user").src="https://randomuser.me/api/portraits/thumb/men/75.jpg";
 
   document.getElementById("name-user").innerText = author;
-  document.getElementById("date-post").innerText = `${date.day} / ${date.month} /${date.year}`;
+  document.getElementById("date-post").innerText = date;
   document.getElementById("range").innerHTML=`Raiting  ${range} `;
   document.getElementById("title-post").innerText= title;
   document.getElementById("text-tag").innerText=tag;

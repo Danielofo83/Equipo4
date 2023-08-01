@@ -29,7 +29,7 @@ const createPost = (postObjet)=>{
 
     let date1= document.createElement("p")
     date1.classList.add("post__date","m-3");
-    date1.innerText=`${date.day} / ${date.month} /${date.year}`
+    date1.innerText=date
 
 
     let link= document.createElement("a")
