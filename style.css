@@ -55,6 +55,7 @@ body {
     color: #5e5ecc;
   }
 }
+
 /* FOOTER */
 .footer__container {
   background-color: #e5e5e5;
@@ -246,6 +247,7 @@ body {
   height: 24px;
 }
 
+
 .reply__box {
   background-color: rgb(245, 245, 245);
   margin-left: 5px;
@@ -280,6 +282,9 @@ body {
 .card {
   margin-bottom: 10px;
 }
+.card:not(:first-of-type) img.card-img-post {
+ display: none;
+}
 
 /* ASIDE 2 */
 .text-dark.text-decoration-none:hover,
@@ -309,3 +314,13 @@ a {
   font-size: 16px;
   font-family: var(--ff-sans-serif);
 }/*# sourceMappingURL=style.css.map */
+
+.p_post_aside{
+  font-size: 10px;
+}
+.card-body-aside{
+  text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
