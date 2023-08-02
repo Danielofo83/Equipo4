@@ -3,6 +3,9 @@ import { getPost } from "./modules/postApi.js";
 import { createPost } from "./modules/createPost.js";
 import { createTag } from "./modules/fiterTag.js";
 import { createPostAside } from "./modules/postAside.js";
+import { createNav } from "./modules/createNav.js";
+
+
 
 let allPost = [];
 
@@ -108,3 +111,12 @@ const prinAllPostAside =  (objectPost) => {
 
 getPostAll()
 
+let token = localStorage.getItem("token");
+
+!token && window.open("../Views/login.html", "_self");
+
+document.getElementById("nav-dev").innerHTML = createNav(token);
+
+document.getElementById("new-post").addEventListener('click', () => {
+    window.open(`/Views/newpost.html`, "_self");
+  });

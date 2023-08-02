@@ -15,6 +15,69 @@ body {
   background-color: rgba(40, 116, 166, 0.1) !important;
 }
 
+.SeccionLogin {
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.isLogged_login_create {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.isLogged_Campana_imag {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* FORMULARIO */
+
+.Principal_title{
+font-weight: bold;
+}
+
+
+.hr-sect {
+ display: flex;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hr-sect::before,.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+
+.File_principal {
+  width: 20px;
+}
+
+.container_file{
+  display: flex;
+}
+
+.form-check-label{
+  font-size: 15px;
+}
+
+
 /* ASIDE1 */
 .icon__null{
   width: 25px;
