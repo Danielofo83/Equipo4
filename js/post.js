@@ -120,3 +120,9 @@ document.getElementById("nav-dev").innerHTML = createNav(token);
 document.getElementById("new-post").addEventListener('click', () => {
     window.open(`/Views/newpost.html`, "_self");
   });
+
+  document.getElementById("Search").addEventListener("keyup", (event) => {
+    let value = event.target.value;
+    let result = allPost.filter((post) => post.title.includes(value.toLowerCase()));
+    prinAllPost(result);
+});

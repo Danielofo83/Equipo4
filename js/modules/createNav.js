@@ -13,8 +13,8 @@ const createNav=(islogged)=>{
        <div class="d-none d-md-block m-auto nav__form__container">
          <form class="d-flex form__search" role="search">
            <div class="input-group">
-             <input type="text" class="form-control border-end-0" placeholder="Search..." aria-label="Buscar"
-               aria-describedby="basic-addon1" />
+             <input id="Search" type="text" class="form-control border-end-0" placeholder="Search..." aria-label="Buscar"
+               aria-describedby="basic-addon1" >
              <button class="border-0 bg-white p-0 search__button">
                <span class="bg-white border-1 border-start-0 rounded-0 rounded-end input-group-text search__hover"
                  id="basic-addon1">
