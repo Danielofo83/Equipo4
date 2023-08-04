@@ -123,7 +123,8 @@ document.getElementById("new-post").addEventListener('click', () => {
 
   document.getElementById("Search").addEventListener("keyup", (event) => {
     let value = event.target.value;
-    let result = allPost.filter(({title}) => title.includes(value.toLowerCase()));
+    let result=[]
+    result = allPost.filter(({title}) => title.includes(value.toLowerCase()));
     console.log(result)
     prinAllPost(result);
 });
