@@ -1,0 +1,955 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Post</title>
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/post/post_style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="bg-body">
+      <nav class="navbar container-fluid bg-body-tertiary">
+          <div class="container">
+
+              <div class="w-100 ">
+
+                  <div class="offcanvas offcanvas-start d-sm-block container_burger d-flex" data-bs-scroll="true"
+                      data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                      aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Dev Community</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                              aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                          <nav class="col-lg-3 col-md-3" data-testid="main-nav" aria-label="DEV Community">
+                              <ul class="">
+                                  <li>
+                                      <a href="#" class="">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/home_icon.svg" alt="">
+                                          </span>
+                                          Home
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/listing_icon.svg" alt="">
+                                          </span>
+                                          Listings
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/Podcasts.svg" alt="">
+                                          </span>
+                                          Podcasts
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/icon_videos.svg" alt="">
+                                          </span>
+                                          Videos
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/tags.svg" alt="">
+                                          </span>
+                                          Tags
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/faq.svg" alt="">
+                                          </span>
+                                          FAQ
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://shop.forem.com"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/Shop.svg" alt="">
+                                          </span>
+                                          Forem Shop
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/Sponsors.svg" alt="">
+                                          </span>
+                                          Sponsors
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <!--?xml version="1.0" encoding="UTF-8"?-->
+                                              <img class="icon__size" src="./icon/dev.svg" alt="">
+                                          </span>
+                                          About
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/contac.svg" alt="">
+                                          </span>
+                                          Contact
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img class="icon__size" src="./icon/gides.svg" alt="">
+                                          </span>
+                                          Guides
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img class="icon__size" src="./icon/Software.svg" alt="">
+                                          </span>
+                                          Software comparisons
+                                      </a>
+                                  </li>
+                              </ul>
+                          </nav>
+
+                          <nav class="mb-4" data-testid="other-nav" aria-labelledby="other-nav-heading-hamburger">
+                              <h2 id="other-nav-heading-hamburger" class="crayons-subtitle-3 py-2 pl-3">
+                                  Other
+                              </h2>
+                              <ul
+                                  class="other-navigation-links sidebar-navigation-links spec-sidebar-navigation-links">
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/code.svg" alt="">
+                                          </span>
+                                          Code of Conduct
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/privacy.svg" alt="">
+                                          </span>
+                                          Privacy Policy
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"
+                                          class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                                          <span class="c-link__icon">
+                                              <img src="./icon/terms.svg" alt="">
+                                          </span>
+                                          Terms of use
+                                      </a>
+                                  </li>
+                              </ul>
+                          </nav>
+
+                          <div class="flex justify-end mb-4">
+                              <a href="https://twitter.com/thepracticaldev" target="_blank"
+                                  class="c-link c-link--icon-alone c-link--block " rel="noopener me">
+                                  <img src="./icon/tw.svg" alt="">
+
+                              </a>
+                              <a href="https://facebook.com/thepracticaldev" target="_blank"
+                                  class="c-link c-link--icon-alone c-link--block " rel="noopener me">
+                                  <img src="./icon/fc.svg" alt="">
+                              </a>
+                              <a href="https://github.com/forem" target="_blank"
+                                  class="c-link c-link--icon-alone c-link--block " rel="noopener me">
+                                  <img src="./icon/gh.svg" alt="">
+                              </a>
+                              <a href="https://instagram.com/thepracticaldev" target="_blank"
+                                  class="c-link c-link--icon-alone c-link--block " rel="noopener me">
+                                  <img src="./icon/insta.svg" alt="">
+                              </a>
+                              <a href="https://twitch.com/thepracticaldev" target="_blank"
+                                  class="c-link c-link--icon-alone c-link--block " rel="noopener me">
+                                  <img src="./icon/twch.svg" alt="">
+                              </a>
+                              <a href="https://fosstodon.org/@thepracticaldev" target="_blank"
+                                  class="c-link c-link--icon-alone c-link--block " rel="noopener me">
+                                  <img src="./icon/mast.svg" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="navar-horizontal d-flex justify-content-between">
+                      <div class="container__left d-flex">
+                          <button
+                              class="button__burger h-15 border border-0 bg-transparent d-lg-none d-md-none d-sm-block d-flex"
+                              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                              aria-controls="offcanvasScrolling">
+                              <img src="./icon/burger.svg" alt=""></button>
+                          <a id="home" class="navbar-brand" href="#">
+                              <img class="site-logo__img w-75 "
+                                  src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                                  alt="DEV Community">
+                          </a>
+                          <input id="search" class="bg-wite border border-0 w-100" type="search"
+                              placeholder="Search..." aria-label="Search">
+                          <button class="btn bg-white h-5 " type="submit"><img src="../icon/search.svg"
+                                  alt=""></button>
+                      </div>
+                      <div id="nav-wraper-r" class="container__r d-flex">
+                      
+                      </div>
+                  </div>
+              </div>
+      </nav>
+  </header>
+    <!-- MAIN & ASIDES -->
+    <div class="container-xl mt-md-3">
+      <div class="row">
+        <aside
+          class="col-1 d-none d-md-block p-0 position-sticky"
+          style="top: 0; left: 0"
+        >
+          <div class="d-flex mt-5 w-100 justify-content-center">
+            <ul class="nav flex-column align-items-center position-fixed">
+              <li class="nav-item">
+                <div class="d-flex flex-column align-items-center mb-4">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      role="img"
+                      aria-hidden="true"
+                      class="crayons-icon"
+                    >
+                      <g clip-path="url(#clip0_988_3276)">
+                        <path
+                          d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z"
+                          fill="#525252"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_988_3276">
+                          <rect width="24" height="24" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <span class="">126</span>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="d-flex flex-column align-items-center mb-4">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      aria-hidden="true"
+                      class="crayons-icon"
+                    >
+                      <path
+                        d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>12</span>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="d-flex flex-column align-items-center mb-4">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      aria-hidden="true"
+                      class="crayons-icon"
+                    >
+                      <path
+                        d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>72</span>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="d-flex flex-column align-items-center mb-4">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      role="img"
+                      aria-labelledby="am70szhbgf6szhytlzfrpvszb3r7jud4"
+                      aria-hidden="true"
+                      class="crayons-icon dropdown-icon"
+                    >
+                      <title id="am70szhbgf6szhytlzfrpvszb3r7jud4">
+                        More...
+                      </title>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <aside class="col-2 d-none d-lg-block px-3 position-absolute end-0 ">
+            <div class="card">
+              <div class="card-header bg-black" style="height: 2rem"></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item position-relative">
+                  <span class="bg-white rounded position-absolute bottom-0">
+                    <img
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--KQZQeede--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/6187/90757535-3192-487a-a278-73b0ff7bec09.png"
+                      class="rounded"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <span class="ms-5">Documatic</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-center">
+                  <button class="btn btn-primary w-100">Follow</button>
+                </li>
+              </ul>
+            </div>
+            <div class="card mt-3">
+              <div class="card-header bg-white">
+                <span class="fw-bold"
+                  >More from
+                  <a
+                    href="#"
+                    class="text-decoration-none icon-link icon-link-hover"
+                    >Documatic</a
+                  ></span
+                >
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item position-relative py-3">
+                  <span>
+                    A Guide to Coding Standards to Improve Code Quality
+                    <div class="ms-1 opacity-75">
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>webdev</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>javascript</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>beginners</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>programming</span
+                      >
+                    </div>
+                  </span>
+                </li>
+                <li class="list-group-item position-relative py-3">
+                  <span>
+                    Pair Programming: Best Practices and Tools
+                    <div class="ms-1 opacity-75">
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>programming</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>webdev</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>beginners</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>tutorial</span
+                      >
+                    </div>
+                  </span>
+                </li>
+                <li class="list-group-item position-relative py-3">
+                  <span>
+                    How to Use Static Code Analysis Tools to Improve Your
+                    TypeScript Codebase
+                    <div class="ms-1 opacity-75">
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>typescript</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>programming</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>engineering</span
+                      >
+                      <span class="me-1"
+                        ><span class="opacity-50">#</span>tooling</span
+                      >
+                    </div>
+                  </span>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="pt-5 pb-2 sticky-top">
+              <div class="card my-3">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span class="text-secondary"> DEV Community</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      aria-labelledby="a14lqjsq0v1m6ude4y7m5foorzuzi7ih"
+                      class="crayons-icon pointer-events-none"
+                    >
+                      <title id="a14lqjsq0v1m6ude4y7m5foorzuzi7ih">
+                        Dropdown menu
+                      </title>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="d-flex-flex-column">
+                    <img
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--KfYhPrXu--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gxatl8njvv45ht30hcx9.png"
+                      class="container-fluid rounded p-0 mt-2"
+                    />
+                    <p class="mt-5">
+                      <a href="#">Check out this survey</a> and help us moderate
+                      our community by becoming a tag moderator here at DEV.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        <main class="col-12 col-md-11 col-lg-8 px-0 mb-5">
+          <section class="d-flex flex-column">
+            <div class="card">
+              <img id="image-post" src="..." class="card-img-top"alt="..."/>
+              <div class="card-body p-md-5 p-3">
+                <div class="d-flex justify-content-start">
+                  <div class="position-relative">
+                    <img
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--dh67OQ-m--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/6187/90757535-3192-487a-a278-73b0ff7bec09.png"
+                      alt=""
+                      class="rounded-circle"
+                      width="40"
+                      height="40"/>
+                    <img id="image-user" src="" alt="" width="24" height="24" class="rounded-circle position-absolute start-50 top-50"/>
+                  </div>
+
+                  <div class="ms-3">
+                    <h5 id="name-user" class="card-title fw-semibold">
+                      <small class="text-body-secondary">for Documatic</small>
+                    </h5>
+                    <h6 id="date-post" class="card-subtitle mb-2 text-muted">
+                    </h6>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start mt-3">
+                  <span class="me-3">
+                    <img
+                      src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                      width="24"
+                      height="24"
+                    />
+                    <span>47</span>
+                  </span>
+
+                  <span class="me-3">
+                    <img
+                      src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                      width="24"
+                      height="24"
+                    />
+                    <span>21</span>
+                  </span>
+
+                  <span class="me-3">
+                    <img
+                      src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                      width="24"
+                      height="24"
+                    />
+                    <span>17</span>
+                  </span>
+
+                  <span class="me-3">
+                    <img
+                      src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                      width="24"
+                      height="24"
+                    />
+                    <span>23</span>
+                  </span>
+
+                  <span class="me-3">
+                    <img
+                      src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                      width="24"
+                      height="24"
+                    />
+                    <span id="range"> </span>
+                  </span>
+                </div>
+                <div class="mt-1">
+                  <h1 id="title-post" class="fw-bold">
+                  </h1>
+                  <div class="my-3">
+                    <a href="#" class="text-decoration-none ms-2"><span id="text-tag" style="color: black"> </span>
+                    </a>
+                  </div>
+                  <div class="card-text fs-5">
+                    <p id="description">
+                      
+                    </p>
+                    
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="d-flex mt-5 justify-content-between">
+                  <img
+                    src="https://ca.slack-edge.com/TCRFJBKB6-U0275TN36E8-db6aee7f44f9-192"
+                    width="24"
+                    height="24"
+                    class="rounded-circle"
+                  />
+                  <div style="width: 90%">
+                    <div class="card p-2">
+                      <p class="text-secondary">Emi • jun 15</p>
+                      <p class="">Eso es como una máquina de churros, no?</p>
+                    </div>
+                    <div class="d-flex mt-2">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          role="img"
+                          aria-labelledby="a6ob8kfx13t6x4bed0t6kc1lgsjrixmz"
+                          class="crayons-icon reaction-icon not-reacted"
+                        >
+                          <title id="a6ob8kfx13t6x4bed0t6kc1lgsjrixmz">
+                            Like comment:
+                          </title>
+                          <path
+                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+                          ></path>
+                        </svg>
+                        <span class="text-secondary"></span>
+                      </span>
+                      <span class="ms-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          role="img"
+                          aria-labelledby="alcxs19n4eunxglidve38s4leynjmszg"
+                          class="crayons-icon reaction-icon not-reacted"
+                        >
+                          <title id="alcxs19n4eunxglidve38s4leynjmszg">
+                            Comment button
+                          </title>
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex mt-5 justify-content-between">
+                  <img
+                    src="../sources/images/oli.svg"
+                    width="24"
+                    height="24"
+                    class="rounded-circle"
+                  />
+                  <div style="width: 90%">
+                    <div class="card p-2">
+                      <p class="text-secondary">Oliver • jun 15</p>
+                      <p class="">No pues está cabrón</p>
+                    </div>
+                    <div class="d-flex mt-2">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          role="img"
+                          aria-labelledby="a6ob8kfx13t6x4bed0t6kc1lgsjrixmz"
+                          class="crayons-icon reaction-icon not-reacted"
+                        >
+                          <title id="a6ob8kfx13t6x4bed0t6kc1lgsjrixmz">
+                            Like comment:
+                          </title>
+                          <path
+                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"
+                          ></path>
+                        </svg>
+                        <span class="text-secondary">1</span>
+                      </span>
+                      <span class="ms-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          role="img"
+                          aria-labelledby="alcxs19n4eunxglidve38s4leynjmszg"
+                          class="crayons-icon reaction-icon not-reacted"
+                        >
+                          <title id="alcxs19n4eunxglidve38s4leynjmszg">
+                            Comment button
+                          </title>
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-5">
+                  <p class="text-secondary">Code of Conduct • Report abuse</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        
+      </div>
+    </div>
+
+    <nav class="navbar d-md-none sticky-bottom bg-white">
+      <ul
+        class="nav w-100 justify-content-around align-items-center"
+        style="height: 58px"
+      >
+        <li class="nav-item">
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                role="img"
+                aria-hidden="true"
+                class="crayons-icon"
+              >
+                <g clip-path="url(#clip0_988_3276)">
+                  <path
+                    d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z"
+                    fill="#525252"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_988_3276">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="">126</span>
+            </span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                class="crayons-icon"
+              >
+                <path
+                  d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"
+                ></path>
+              </svg>
+              <span>12</span>
+            </span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                class="crayons-icon"
+              >
+                <path
+                  d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+                ></path>
+              </svg>
+              <span class="text-reset">72</span>
+            </span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                role="img"
+                aria-labelledby="am70szhbgf6szhytlzfrpvszb3r7jud4"
+                aria-hidden="true"
+                class="crayons-icon dropdown-icon"
+              >
+                <title id="am70szhbgf6szhytlzfrpvszb3r7jud4">More...</title>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- FOOTER -->
+    <footer
+      class="d-flex flex-column align-items-center justify-content-center py-4 text-center footer__container"
+      style="font-size: 0.8rem"
+    >
+      <p>
+        <a href="" class="text-decoration-none footer__a">DEV Community</a> — A
+        constructive and inclusive social network for software developers. With
+        you every step of your journey.
+      </p>
+      <ul
+        class="d-flex justify-content-center flex-wrap p-0 footer_ul__container"
+        style="font-size: 0.8rem"
+      >
+        <li class="nav-link d-flex align-items-center">
+          <a href="/"> Home </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/listings"> Listings </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/pod"> Podcasts </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/videos"> Videos </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/tags"> Tags </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/faq"> FAQ </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="https://shop.forem.com"> Forem Shop </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/sponsorships"> Sponsors </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/about"> About </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/contact"> Contact </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/guides"> Guides </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/software-comparisons"> Software comparisons </a>
+        </li>
+      </ul>
+      <ul
+        class="d-flex justify-content-center flex-wrap p-0 footer_ul__container footer__container__line__height"
+      >
+        <li class="nav-link d-flex align-items-center">
+          <a href="/code-of-conduct"> Code of Conduct </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/privacy"> Privacy Policy </a>
+          <img
+            src="../sources/images/dot-svgrepo-com.svg
+            "
+            width="4"
+            height="4"
+            class="mx-2"
+          />
+        </li>
+        <li class="nav-link d-flex align-items-center">
+          <a href="/terms"> Terms of use </a>
+        </li>
+      </ul>
+      <p>
+        Built on <a href="" class="text-decoration-none footer__a">Forem</a> —
+        the
+        <a href="" class="text-decoration-none footer__a">open source</a>
+        software that powers
+        <a href="" class="text-decoration-none footer__a">DEV</a> and other
+        inclusive communities.
+      </p>
+      <p>
+        Made with love and
+        <a href="" class="text-decoration-none footer__a">Ruby on Rails</a>. DEV
+        Community © 2016 - 2023.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/detail.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
+  </body>
+</html>
