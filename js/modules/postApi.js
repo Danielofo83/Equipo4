@@ -11,5 +11,18 @@ const getPostById = async (id) => {
     return data;
   };
   
+  const getUser = async()=>{
+    let response = await fetch("https://reto27gequipo4-default-rtdb.firebaseio.com/users/.json")
+    let data = await response.json()
+    return data
+}
+const getUserById = async (id) => {
+    let response = await fetch(
+      `https://reto27gequipo4-default-rtdb.firebaseio.com/users/${id}/.json`
+    );
+    let data = await response.json();
+    return data;
+  };
+  
 
-export {getPost,getPostById}
+export {getPost,getPostById,getUser,getUserById}

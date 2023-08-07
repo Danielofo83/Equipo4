@@ -15,18 +15,13 @@ body {
   background-color: rgba(40, 116, 166, 0.1) !important;
 }
 
-.SeccionLogin {
-  flex-grow: 1;
-  justify-content: flex-end;
-  gap: 1rem;
+.btn-warning {
+  background-color: teal !important;
+  border: 1rem teal !important;
 }
 
-.isLogged_login_create {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  align-items: center;
+.btn-warning:hover {
+  background-color: rgb(3, 150, 150) !important;
 }
 
 .isLogged_Campana_imag {
@@ -210,7 +205,7 @@ font-weight: bold;
 .post__info {
   margin: 0px;
   margin-left: 5px;
-  line-height: 10px;
+  
 }
 
 .post__photo {
@@ -261,6 +256,7 @@ font-weight: bold;
 .post__language {
   font-size: 14px;
   margin-left: 20px;
+  margin-top: 0;
   flex-wrap: wrap;
 }
 
@@ -386,4 +382,15 @@ a {
  display: flex;
  flex-direction: column;
  align-items: center;
+}
+
+.input-image{
+  border: 2px solid rgb(187, 184, 184);
+  width: 175px;
+  margin-top:30px;
+  
+}
+
+.form-styles{
+  padding-left: 50px;
 }

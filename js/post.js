@@ -3,7 +3,6 @@ import { getPost } from "./modules/postApi.js";
 import { createPost } from "./modules/createPost.js";
 import { createTag } from "./modules/fiterTag.js";
 import { createPostAside } from "./modules/postAside.js";
-import { createNav } from "./modules/createNav.js";
 
 
 
@@ -56,7 +55,7 @@ relevant.addEventListener('click', ()=>{
 
 latestPost.addEventListener('click', ()=>{
     document.getElementById("container-post").innerText=" "
-    let postDate= allPost.sort((a, b) => moment(a.date, "DD-MM-AA").unix() - moment(b.date, "DD-MM-AA").unix())
+    let postDate= allPost.sort((a, b) => moment(b.date, "AAAA-MM-DD").unix() - moment(a.date, "AAAA-MM-DD").unix())
     prinAllPost(postDate)
   })
   
@@ -68,7 +67,7 @@ latestPost.addEventListener('click', ()=>{
     prinAllPost(listTop)
   })
 
-let tagFilter = "#css"
+let tagFilter = "css"
 
 
 const prinTag = (tagList) => {
@@ -85,7 +84,7 @@ const prinTag = (tagList) => {
         containerPostTag.append(cardTagg)
     });
 }
-let tagFilter2 = "#javascript"
+let tagFilter2 = "javascript"
 
 
 const prinTag2 = (tagList) => {
@@ -108,15 +107,12 @@ const prinAllPostAside =  (objectPost) => {
         containerPostAside.append(posCardAside)
 }
 
+document.getElementById("search").addEventListener("keyup", (event) => {
+    document.getElementById("container-post").innerHTML = "";
+    let value = event.target.value;
+    console.log(value)
+    let result = allPost.filter((data) => data.title.toLowerCase().includes(value.toLowerCase()));
+    prinAllPost(result);
+});
 
 getPostAll()
-
-let token = localStorage.getItem("token");
-
-!token && window.open("../Views/login.html", "_self");
-
-document.getElementById("nav-dev").innerHTML = createNav(token);
-
-document.getElementById("new-post").addEventListener('click', () => {
-    window.open(`/Views/newpost.html`, "_self");
-  });

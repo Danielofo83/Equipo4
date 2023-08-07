@@ -2,7 +2,7 @@ const createPostAside =(objectPost)=>{
     let {key,image,description,title,tag}= objectPost;
     
     let cardPostAside = document.createElement("div");
-    cardPostAside.classList.add("card", "mb-4", "card-post_aside");
+    cardPostAside.classList.add("card", "mb-4", "card-post_aside", "shadow");
     
     let imagePostAside = document.createElement("img");
     imagePostAside.classList.add("card-img-post1");
@@ -10,7 +10,7 @@ const createPostAside =(objectPost)=>{
     imagePostAside.setAttribute("alt","imagen del post");
 
     let cardBodyAside = document.createElement("div");
-    cardBodyAside.classList.add("card-body-aside");
+    cardBodyAside.classList.add("card-body-aside","p-3");
 
     let postInfoAside = document.createElement("div")
     postInfoAside.classList.add("post__info",  "d-row")
