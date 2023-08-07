@@ -67,7 +67,7 @@ latestPost.addEventListener('click', ()=>{
     prinAllPost(listTop)
   })
 
-let tagFilter = "css"
+let tagFilter = "#css"
 
 
 const prinTag = (tagList) => {
@@ -84,7 +84,7 @@ const prinTag = (tagList) => {
         containerPostTag.append(cardTagg)
     });
 }
-let tagFilter2 = "javascript"
+let tagFilter2 = "#javascript"
 
 
 const prinTag2 = (tagList) => {
