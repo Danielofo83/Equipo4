@@ -62,7 +62,7 @@ const createPost = (postObjet)=>{
     rangeText.innerText= `Raiting  ${top} `
 
     let imgComments = document.createElement("img")
-    imgComments.setAttribute("src","./sources/images/comments.png")
+    imgComments.setAttribute("src","./icon/coment.svg")
 
     let commentText = document.createElement("span")
     commentText.classList.add("comments__number")
